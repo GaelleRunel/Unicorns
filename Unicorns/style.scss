@@ -1,0 +1,162 @@
+// STYLE GENERAL ----------------------------------
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Courgette', cursive;
+}
+
+h1{
+    color: #C55394;
+}
+
+h3,h4{
+    color: #EB43A3;
+}
+
+nav {
+    background-color: #C55394;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+
+    h2{
+        margin-top: 8px; // pour centrer en hauteur la marque 
+        padding-left: 20px;
+    }
+
+    ul{
+        line-height: 3; // pour centrer en hateur les elements de ul
+        display: flex;
+        margin: 0;
+
+        li{
+           display: flex;
+           padding: 0 20px;
+           text-transform: uppercase;
+           a{
+            color: #FFF; // pour que les ancres restent blanches (et non bleues)
+           }
+       }
+   }
+}
+
+li:hover{
+    background-color: #EB43A3; // changement de couleur au survol sur lest items du menu 
+}
+a:hover{
+    text-decoration: none;
+    color: #FFF; // pour que les élements restent blancs et sans être soulignés au survol
+}
+
+main{
+    background-image: url("img/background.png");
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+header {
+    position: relative;
+    height: 200px;
+    background-image: url("img/rainbow.png");
+    background-repeat: no-repeat;
+    background-position: top;  // rainbow en background centré dans le header
+
+    div{
+        position: absolute; // pour mettre le texte au milieu de l'arc en ciel
+        margin-top: 100px;
+        margin-left: 50%;
+        transform: translate(-50%); 
+    }
+}
+
+/* SECTIONS -----------------------------------*/
+.sections_container{
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    background-color: #FFF;
+    width: 90%;
+    margin: auto;
+    padding: 0 30px 30px 30px; 
+}
+
+section{
+    padding-top: 60px; // pour créer un espace avant chaque section 
+}
+
+h3{
+    margin-bottom: 30px; // pour créer un espace après chaque titre de section
+}
+
+
+// Section UNICORNS ------------------------------------------
+
+img{
+    width: 100%; // pour adapter les images à la taulle de chaque colonne de la grille
+   }
+
+figure {
+    transition: transform 1s linear;}
+figure:hover {
+    transform: scale(1.2);}  // effet de zoom au survol de l'image
+
+figcaption{
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    opacity: 0.8;
+    color: #FFF;
+    line-height: 2rem;
+    margin-top: -30px; // pour faire chevaucher le figcaption sur l'image
+}
+
+ 
+// Section CONTACT ---------------------------------------------------
+
+iframe{
+    width: 100%; // rendre la map responsive
+    height: 450px; 
+}
+
+.address, .newsletter{
+    padding-top: 20px;
+    padding-bottom: 20px; // pour espacer les div adresse et newsletter
+}
+
+h4{
+    font-size: 20px;  // pour diminuer la grosseur des titres h4
+}
+form{
+    margin: 10px 0;
+}
+
+input{
+    line-height: 2rem; // pour agrandir un peu le cadre du formulaire
+}
+
+.btn-primary {   
+    border: 1px solid #EB43A3;
+    background-color: #EB43A3; // changement du border et couleur du button => rose
+}
+
+
+// FOOTER -------------------------------------
+footer{
+    line-height: 3rem;
+    background-color: #E577B5;
+    text-align: end;
+    color: #FFF;
+    padding: 0 10px;
+}
+/* 
+Couleurs : 
+	 
+	hover menu : 
+   
+*/
